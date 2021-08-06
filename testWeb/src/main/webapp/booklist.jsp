@@ -1,4 +1,6 @@
-<%@ page import="java.sql.*" contentType="text/html;charset=EUC-KR"%>
+
+<%@ page import="java.sql.*" contentType="text/html;charset=utf-8"%>
+
 <%
 	Class.forName("oracle.jdbc.driver.OracleDriver");
 	String url = "jdbc:oracle:thin:@localhost:1521:xe";
@@ -21,7 +23,7 @@
 		<tr>
 			<td width="50" height="20" bgcolor="#D2E9F9">
 				<p align="center">
-					<span style="font-size: 8pt;"><b>¼ø¹ø</b></span>
+					<span style="font-size: 8pt;"><b>ìˆœë²ˆ</b></span>
 				</p>
 			</td>		
 		
@@ -57,7 +59,7 @@
 		<tr>
 			<td width="150" height="20">
 				<p>
-					<span style="font-size:9pt;"><font face="µ¸¿òÃ¼"
+					<span style="font-size:9pt;"><font face="ë‹ì›€ì²´"
 							color="black"><center> <%=cnt%></center></font></span>
 				</p>
 			</td>
@@ -65,19 +67,19 @@
 			<td width="150" height="20">
 				<p>
 					<span style="font-size: 9pt;"> <a
-						href="bookview.jsp?bookid=<%=W_BOOKID%>"> <font face="µ¸¿òÃ¼"
+						href="bookview.jsp?bookid=<%=W_BOOKID%>"> <font face="ë‹ì›€ì²´"
 							color="black"> <%=W_BOOKNAME%></font></a></span>
 				</p>
 			</td>
 			<td width="150" height="20">
 				<p align="center">
-					<span style="font-size: 9pt;"> <font face="µ¸¿òÃ¼"><%=W_PUBLISHER%></font></span>
+					<span style="font-size: 9pt;"> <font face="ë‹ì›€ì²´"><%=W_PUBLISHER%></font></span>
 				</p>
 			</td>
 
 			<td width="150" height="20">
 				<p align="center">
-					<span style="font-size: 9pt;"> <font face="µ¸¿òÃ¼"><%=W_PRICE%></font></span>
+					<span style="font-size: 9pt;"> <font face="ë‹ì›€ì²´"><%=W_PRICE%></font></span>
 				</p>
 			</td>
 		</tr>
@@ -92,7 +94,7 @@
 		<tr>
 			<td width="1350">
 				<p align="right">
-					<b><a href=booklist.jsp> <font size="1" face="µ¸¿òÃ¼"
+					<b><a href=booklist.jsp> <font size="1" face="ë‹ì›€ì²´"
 							color="black">LIST</font></a></b>
 				</p>
 			</td>
