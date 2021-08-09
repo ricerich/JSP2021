@@ -9,5 +9,7 @@
 	<jsp:setProperty name="person" property="name" value="홍길동" />
 	<p>	아이디 : <jsp:getProperty property="id" name="person" />
 	<p>	이 름 : <jsp:getProperty property="name" name="person" />
+	
+	<%= person.getId() %>
 </body>
 </html>
