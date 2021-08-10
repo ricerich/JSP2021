@@ -40,7 +40,7 @@
 	newProduct.setUnitsInStock(stock);
 	newProduct.setCondition(condition);
 
-	dao.addProduct(newProduct); 
+	dao.addProduct(newProduct);
 
 	response.sendRedirect("products.jsp");
 %>
