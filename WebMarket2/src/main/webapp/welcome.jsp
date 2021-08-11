@@ -3,7 +3,7 @@
 <html>
 <head>
 <link rel="stylesheet"	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<title>Welcome!</title>
+<title>Welcome</title>
 </head>
 <body>
 	<%@ include file="menu.jsp"%>
@@ -22,7 +22,7 @@
 				<%=tagline%>
 			</h3>
 			<%
-				response.setIntHeader("Refresh", 1);
+				response.setIntHeader("Refresh", 5);
 				Date day = new java.util.Date();
 				String am_pm;
 				int hour = day.getHours();
