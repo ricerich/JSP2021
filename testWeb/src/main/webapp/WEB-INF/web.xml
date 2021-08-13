@@ -4,7 +4,7 @@
 	</security-role>
 	<security-constraint>
 		<web-resource-collection>
-			<web-resource-name>JSPBook</web-resource-name>
+			<web-resource-name>testWeb</web-resource-name>
 			<url-pattern>/ch10/security01.jsp</url-pattern>
 			<http-method>GET</http-method>
 		</web-resource-collection>
