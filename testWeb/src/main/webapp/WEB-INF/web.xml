@@ -5,7 +5,7 @@
 	<security-constraint>
 		<web-resource-collection>
 			<web-resource-name>testWeb</web-resource-name>
-			<url-pattern>/ch10/security01.jsp</url-pattern>
+			<url-pattern>/ch10/security02.jsp</url-pattern>
 			<http-method>GET</http-method>
 		</web-resource-collection>
 		<auth-constraint>
@@ -14,15 +14,25 @@
 		</auth-constraint>
 	</security-constraint>
 	
-	<login-config>
-	 		<auth-method>BASIC</auth-method>		
-	</login-config>
- 	
 <!-- 	<login-config> -->
-<!--  		<auth-method>FORM</auth-method> -->
-<!-- 		<form-login-config> -->
-<!-- 			<form-login-page>/ch10/login.jsp</form-login-page> -->
-<!-- 			<form-error-page>/ch10/login_failed.jsp</form-error-page> -->
-<!-- 		</form-login-config> -->
-<!--  	</login-config> -->
+<!-- 	 		<auth-method>BASIC</auth-method>		 -->
+<!-- 	</login-config> -->
+ 	
+	<login-config>
+ 		<auth-method>FORM</auth-method>
+		<form-login-config>
+			<form-login-page>/ch10/login.jsp</form-login-page>
+			<form-error-page>/ch10/login_failed.jsp</form-error-page>
+		</form-login-config>
+ 	</login-config>
+ 	
+ 	 <error-page>
+		<error-code>500</error-code>
+		<location>/ch11/errorCode_error.jsp</location>
+	</error-page>
+	
+	<error-page>
+		<exception-type>java.lang.Exception</exception-type>
+		<location>/ch11/exceptionType_error.jsp</location>
+	</error-page>
 </web-app>

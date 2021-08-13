@@ -1,6 +1,7 @@
 ﻿<%@ page contentType="text/html; charset=utf-8"%>
 <%@ page import="dto.Product"%>
 <%@ page import="dao.ProductRepository"%>
+<%@ page errorPage ="exceptionNoProductId.jsp"%>
 <html>
 <head>
 <link rel ="stylesheet" href ="./resources/css/bootstrap.min.css" />
@@ -21,7 +22,7 @@
 	<div class="container">
 		<div class="row">
 			<div class ="col-md-5">
-				<img src="./upload2/<%=product.getFilename()%>" style="width: 100%" /> 
+				<img src="./upload2/<%=product.getFilename()%>" style="width: 100%" />
 			</div>
 			<div class="col-md-6">
 				<h3><%=product.getPname()%></h3>
