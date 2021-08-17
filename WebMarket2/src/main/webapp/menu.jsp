@@ -4,4 +4,4 @@
 			<a class="navbar-brand" href="./welcome.jsp">Home</a>
 		</div>
 	</div>
-</nav>
+</nav> 
