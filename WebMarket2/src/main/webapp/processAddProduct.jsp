@@ -58,7 +58,14 @@
 	pstmt.setLong(7, stock);
 	pstmt.setString(8, condition);
 	pstmt.setString(9, fileName);
-	pstmt.executeUpdate();
+	
+	int success = pstmt.executeUpdate();
+	
+	String str1 ="";
+	if(success == 1)
+		str1 = "성공";
+	else
+		str1 = "실패";
 	
 	if (pstmt != null)
  		pstmt.close();

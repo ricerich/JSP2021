@@ -62,6 +62,9 @@
 				pstmt.setString(7, condition);
 				pstmt.setString(8, fileName);
 				pstmt.setString(9, productId);
+				
+				System.out.println("쿼리문장 출력"+ sql);
+				
 				pstmt.executeUpdate();
 			} else {
 				sql = "UPDATE product SET p_name=?, p_unitPrice=?, p_description=?, p_manufacturer=?, p_category=?, p_unitsInStock=?, p_condition=? WHERE p_id=?";
