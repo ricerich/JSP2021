@@ -1,2 +1,2 @@
-INSERT INTO MEMBER (id, passwd, name) VALUES ('admin', '1234', '包府磊');
-INSERT INTO MEMBER (id, passwd, name) VALUES ('honggd', 'hong1234', '全辨悼');
+INSERT INTO MEMBER (id, passwd, name) VALUES (1, '1234', '包府磊');
+INSERT INTO MEMBER (id, passwd, name) VALUES (2, 'hong1234', '全辨悼');
