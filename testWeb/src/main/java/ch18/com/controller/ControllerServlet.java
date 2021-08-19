@@ -20,7 +20,7 @@ public class ControllerServlet extends HttpServlet {
 		response.setContentType("text/html; charset=utf-8");		
 
 		String id = request.getParameter("id") == null ? "no" : request.getParameter("id").trim();
-		String password = request.getParameter("passwd") == null ? "9999" : request.getParameter("passwd").trim();
+		String password = request.getParameter("passwd") == null ? "admin" : request.getParameter("passwd").trim();
 
 
 		LoginBean bean = new LoginBean();
