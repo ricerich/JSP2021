@@ -11,6 +11,7 @@
 		String password = "madang";
 
 		Class.forName("oracle.jdbc.driver.OracleDriver");
+		
 		conn = DriverManager.getConnection(url, user, password);
 		
 	} catch (SQLException ex) {

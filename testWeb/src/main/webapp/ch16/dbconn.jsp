@@ -2,10 +2,11 @@
 <%
 	Connection conn = null;
 
-	String url = "jdbc:mysql://localhost:3306/JSPBookDB";
-	String user = "root";
-	String password = "1234";
+	String url = "jdbc:oracle:thin:@localhost:1521:xe";
+	String user = "madang";
+	String password = "madang";
+	
+	Class.forName("oracle.jdbc.driver.OracleDriver");
 
-	Class.forName("com.mysql.jdbc.Driver");
 	conn = DriverManager.getConnection(url, user, password);
 %>
