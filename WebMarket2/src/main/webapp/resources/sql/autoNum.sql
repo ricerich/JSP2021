@@ -6,7 +6,7 @@ select * from USER_SEQUENCES;
 
 create or replace ID_SEQUENCE_TRIGGER
 BEFORE INSERT
-ON member
+ON board
 REFERENCING NEW AS NEW
 FOR EACH ROW
 BEGIN
